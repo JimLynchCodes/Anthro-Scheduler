@@ -1,0 +1,27 @@
+{
+  "name": "anthro-scheduler",
+  "version": "0.0.1",
+  "description": "Schedules node-cron tasks in human-like intervals. 😉",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimLynchCodes/Anthro-Scheduler.git"
+  },
+  "keywords": [
+    "scheduler",
+    "cron"
+  ],
+  "author": "JimTheMan <mrdotjim@gmail.com> (http://www.wisdomofjim.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JimLynchCodes/Anthro-Scheduler/issues"
+  },
+  "homepage": "https://github.com/JimLynchCodes/Anthro-Scheduler#readme",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "node-cron": "^2.0.3"
+  }
+}
