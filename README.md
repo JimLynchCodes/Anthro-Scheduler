@@ -2,7 +2,7 @@
 Schedules node-cron tasks in human-like intervals. 😉
 
 # Motivation
-The initial usage for this was for a Twitter bot. Throughtout the day the bot was supposed to tweet at a specified interval. In order to make the scheduler seem human-like it could not be perfectly exact intervals. This scheduler allows you to set a minimum and maximum amount of minutes and seconds added for each interval, and the scheduler adds a random amount of time picked uniformly from the valid interval. 
+The initial usage for this was for a Twitter bot. Throughtout the day the bot was supposed to tweet at a specified interval. In order to make the scheduler seem human-like it could not be perfectly exact intervals. This scheduler allows you to set a minimum and maximum amount of minutes and seconds added for each interval, and the scheduler adds a random amount of time picked uniformly from the valid interval. The goal for this moduel was to decouple it from the Twitter tweet program, making it a human-interval shceduler that can run any arbitary shell command!
 
 # Usage
 
@@ -45,3 +45,21 @@ module.exports = constants
 ```
 npm start
 ```
+
+Then just leave the process running all day and allow the shell commands to execute at the times defined by the scheduler!
+
+
+6. Run tests:
+```
+npm test
+```
+
+Different kinds of tests...
+
+The `*.monte-carlo.test.js` files just use the params in set in the constants file and check that after 1,000 calls to the AddRandomTimeWithBounds function that it always stays within the bounds. These tests are a relatively easy to write and understand, but they are pretty inefficient to execute. These can in a way be thought of as the "integration tests" for this project.
+
+The `*.unit.test.js` files mock out dependencies and varying dependencies such as `Math.random()`.
+
+---
+
+Example Output:
