@@ -63,3 +63,5 @@ The `*.unit.test.js` files mock out dependencies and varying dependencies such a
 ---
 
 Example Output:
+
+<img src="Anthro-Scheduler-screenshot.png"/>
