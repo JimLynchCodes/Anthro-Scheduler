@@ -9,8 +9,7 @@ const addRandomTimeWithinBounds = (initialTime) => {
     const minutesInterval = constants.INTERVAL_MAX_MINUTES - constants.INTERVAL_MIN_MINUTES;
     const minutestoAdd = constants.INTERVAL_MIN_MINUTES + Math.floor(Math.random() * minutesInterval)
 
-    console.log(`adding ${minutestoAdd} minutes and ${secondstoAdd} seconds!`)
-
+    console.log(`[Adding ${minutestoAdd} min and ${secondstoAdd} s]`);
     return initialTime.add(secondstoAdd, 'seconds').add(minutestoAdd, 'minutes')
 }
 

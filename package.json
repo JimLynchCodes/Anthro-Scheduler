@@ -4,6 +4,7 @@
   "description": "Schedules node-cron tasks in human-like intervals. 😉",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "npm test"
   },
   "repository": {
